@@ -1,12 +1,12 @@
 function minDate(dates) {
-	dateObjects = dates.map(function (date) {
+	var dateObjects = dates.map(function (date) {
 		return new Date(date)
 	});
-	minDate = new Date(math.min.apply(null,dateObjects));
+	var minDate = new Date(Math.min.apply(null , dateObjects));
 
 	var year = String(minDate.getFullYear());
 	var month = String(minDate.getMonth()+1).padStart(2,'0');
-	var day = String(minDate.getDate()).padStart(2.'0');
+	var day = String(minDate.getDate()).padStart(2,'0');
 	return year + '/' + month + '/' + day
   //write you code here
 }
